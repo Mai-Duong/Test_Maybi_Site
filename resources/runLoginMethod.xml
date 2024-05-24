@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="tests" name="Cart - Maybi" thread-count="2">
+	<listeners>
+		<listener class-name="commons.MethodListener" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="reportConfig.ReportNGListener" />
+	</listeners>
+
+	<parameter name="url" value="https://maybi.com/" />
+
+
+ <!-- Định nghĩa một test -->
+    <test name="Run on CHROME">
+        <parameter name="browser" value="chrome" />
+        <classes>
+            <class name="com.maybestore.Testcase_checkount">
+                <methods>
+                    <include name="beforeMethod"/>
+                </methods>
+            </class>
+            <class name="com.maybestore.Testcase_checkount">
+                <methods>
+                    <include name="TC_12_ValidEmailAndPassword_Login"/>
+                </methods>
+            </class>
+            <class name="com.maybestore.Testcase_Login">
+                <methods>
+                    <include name="TC_11_DeletedEmail_LoginWithPassword"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+</suite> 

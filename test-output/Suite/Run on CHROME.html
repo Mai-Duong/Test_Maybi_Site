@@ -1,0 +1,882 @@
+<html>
+<head>
+<title>TestNG:  Run on CHROME</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Run on CHROME</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>17/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed May 22 08:36:35 GMT+07:00 2024</td>
+</tr>
+<tr><td>Total time:</td><td>412 seconds (412982 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.maybestore.Testcase_Register.TC_02_RegisterWithWhitespaceLasName()'><b>TC_02_RegisterWithWhitespaceLasName</b><br>Test class: com.maybestore.Testcase_Register<br>Parameters: chrome<br/>
+<a href="#Output-133952259" onClick='toggleBox("Output-133952259", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-133952259" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-133952259">
+[2024-05-22 08:36:53,073 INFO com.maybestore.Testcase_Register] - Step 1: Hover register link
+<br><br/>
+[2024-05-22 08:36:53,475 INFO com.maybestore.Testcase_Register] - Step 2: Click register link
+<br><br/>
+[2024-05-22 08:37:04,175 INFO com.maybestore.Testcase_Register] - Step 2: Click open Register page
+<br><br/>
+[2024-05-22 08:37:04,175 INFO com.maybestore.Testcase_Register] - Step 3: Sendkey Lastname
+<br><br/>
+[2024-05-22 08:37:04,473 INFO com.maybestore.Testcase_Register] - Step 4: Sendkey Firstname
+<br><br/>
+[2024-05-22 08:37:04,568 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey phone
+<br><br/>
+[2024-05-22 08:37:04,787 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey email
+<br><br/>
+[2024-05-22 08:37:04,884 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey pass
+<br><br/>
+[2024-05-22 08:37:04,963 INFO com.maybestore.Testcase_Register] - Step 6: Click button Register
+<br><br/>
+[2024-05-22 08:37:06,180 INFO com.maybestore.Testcase_Register] - Step 7: Validation Message
+<br><br/>
+<br><a target="_blank" href="file:///D:\prject-traning\Online_Class_22\01-software\eclipse-java-2022-03-R-win32-x86_64\workspace\test-maybi-site/reportNGScreenshortRegister/TC_02_RegisterWithWhitespaceLasName_22_05_2024_08_37_06.png"><img src="file:///D:\prject-traning\Online_Class_22\01-software\eclipse-java-2022-03-R-win32-x86_64\workspace\test-maybi-site/reportNGScreenshortRegister/TC_02_RegisterWithWhitespaceLasName_22_05_2024_08_37_06.png" height='100' width='150'/> </a></br><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.JavascriptException: javascript error: Cannot read properties of null (reading &apos;validationMessage&apos;)
+  (Session info: chrome=124.0.6367.208)
+Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [580f1f8ffa400fc5a9f05287ee48c6f1, executeScript {script=return document.querySelector(&apos;#lastName&apos;).validationMessage;, args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.208, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56735}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56735/devtoo..., se:cdpVersion: 124.0.6367.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 580f1f8ffa400fc5a9f05287ee48c6f1
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:467)
+	at commons.BaseTest.getHTML5ValidationMessageLastNameRegister(BaseTest.java:146)
+	at com.maybestore.Testcase_Register.TC_02_RegisterWithWhitespaceLasName(Testcase_Register.java:108)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace133952259", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace133952259'><pre>org.openqa.selenium.JavascriptException: javascript error: Cannot read properties of null (reading &apos;validationMessage&apos;)
+  (Session info: chrome=124.0.6367.208)
+Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [580f1f8ffa400fc5a9f05287ee48c6f1, executeScript {script=return document.querySelector(&apos;#lastName&apos;).validationMessage;, args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.208, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56735}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56735/devtoo..., se:cdpVersion: 124.0.6367.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 580f1f8ffa400fc5a9f05287ee48c6f1
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:467)
+	at commons.BaseTest.getHTML5ValidationMessageLastNameRegister(BaseTest.java:146)
+	at com.maybestore.Testcase_Register.TC_02_RegisterWithWhitespaceLasName(Testcase_Register.java:108)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>13</td>
+<td>com.maybestore.Testcase_Register@d554c5f</td></tr>
+<tr>
+<td title='com.maybestore.Testcase_Register.TC_03_RegisterWithWhitespaceFirstName()'><b>TC_03_RegisterWithWhitespaceFirstName</b><br>Test class: com.maybestore.Testcase_Register<br>Parameters: chrome<br/>
+<a href="#Output-910257978" onClick='toggleBox("Output-910257978", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-910257978" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-910257978">
+[2024-05-22 08:37:16,142 INFO com.maybestore.Testcase_Register] - Step 1: Hover register link
+<br><br/>
+[2024-05-22 08:37:16,574 INFO com.maybestore.Testcase_Register] - Step 2: Click register link
+<br><br/>
+[2024-05-22 08:37:17,750 INFO com.maybestore.Testcase_Register] - Step 2: Click open Register page
+<br><br/>
+[2024-05-22 08:37:17,750 INFO com.maybestore.Testcase_Register] - Step 3: Sendkey Lastname
+<br><br/>
+[2024-05-22 08:37:17,994 INFO com.maybestore.Testcase_Register] - Step 4: Sendkey Firstname
+<br><br/>
+[2024-05-22 08:37:18,212 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey phone
+<br><br/>
+[2024-05-22 08:37:18,363 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey email
+<br><br/>
+[2024-05-22 08:37:18,501 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey pass
+<br><br/>
+[2024-05-22 08:37:18,610 INFO com.maybestore.Testcase_Register] - Step 6: Click button Register
+<br><br/>
+[2024-05-22 08:37:19,481 INFO com.maybestore.Testcase_Register] - Step 7: Validation Message
+<br><br/>
+<br><a target="_blank" href="file:///D:\prject-traning\Online_Class_22\01-software\eclipse-java-2022-03-R-win32-x86_64\workspace\test-maybi-site/reportNGScreenshortRegister/TC_03_RegisterWithWhitespaceFirstName_22_05_2024_08_37_39.png"><img src="file:///D:\prject-traning\Online_Class_22\01-software\eclipse-java-2022-03-R-win32-x86_64\workspace\test-maybi-site/reportNGScreenshortRegister/TC_03_RegisterWithWhitespaceFirstName_22_05_2024_08_37_39.png" height='100' width='150'/> </a></br><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.JavascriptException: javascript error: Cannot read properties of null (reading &apos;validationMessage&apos;)
+  (Session info: chrome=124.0.6367.208)
+Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6bc0a35aa9e2d48435950f66663f2138, executeScript {script=return document.querySelector(&apos;#firstName&apos;).validationMessage;, args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.208, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56855}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56855/devtoo..., se:cdpVersion: 124.0.6367.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6bc0a35aa9e2d48435950f66663f2138
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:467)
+	at commons.BaseTest.getHTML5ValidationMessageFirstNameRegister(BaseTest.java:151)
+	at com.maybestore.Testcase_Register.TC_03_RegisterWithWhitespaceFirstName(Testcase_Register.java:227)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace910257978", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace910257978'><pre>org.openqa.selenium.JavascriptException: javascript error: Cannot read properties of null (reading &apos;validationMessage&apos;)
+  (Session info: chrome=124.0.6367.208)
+Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6bc0a35aa9e2d48435950f66663f2138, executeScript {script=return document.querySelector(&apos;#firstName&apos;).validationMessage;, args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.208, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56855}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56855/devtoo..., se:cdpVersion: 124.0.6367.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6bc0a35aa9e2d48435950f66663f2138
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:467)
+	at commons.BaseTest.getHTML5ValidationMessageFirstNameRegister(BaseTest.java:151)
+	at com.maybestore.Testcase_Register.TC_03_RegisterWithWhitespaceFirstName(Testcase_Register.java:227)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>23</td>
+<td>com.maybestore.Testcase_Register@d554c5f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.maybestore.Testcase_Register.TC_01_RegisterEmpty_All_Fields()'><b>TC_01_RegisterEmpty_All_Fields</b><br>Test class: com.maybestore.Testcase_Register<br>Parameters: chrome<br/>
+<a href="#Output-473164714" onClick='toggleBox("Output-473164714", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-473164714" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-473164714">
+[2024-05-22 08:36:38,133 INFO com.maybestore.Testcase_Register] - Step 1: Hover register link
+<br><br/>
+[2024-05-22 08:36:40,070 INFO com.maybestore.Testcase_Register] - Step 2: Click register link
+<br><br/>
+[2024-05-22 08:36:41,217 INFO com.maybestore.Testcase_Register] - Step 2: Click open Register page
+<br><br/>
+[2024-05-22 08:36:41,218 INFO com.maybestore.Testcase_Register] - Step 3: Sendkey Lastname
+<br><br/>
+[2024-05-22 08:36:41,422 INFO com.maybestore.Testcase_Register] - Step 4: Sendkey Firstname
+<br><br/>
+[2024-05-22 08:36:41,766 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey phone
+<br><br/>
+[2024-05-22 08:36:42,083 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey email
+<br><br/>
+[2024-05-22 08:36:42,253 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey pass
+<br><br/>
+[2024-05-22 08:36:42,378 INFO com.maybestore.Testcase_Register] - Step 6: Click button Register
+<br><br/>
+[2024-05-22 08:36:42,968 INFO com.maybestore.Testcase_Register] - Step 7: Validation Message
+<br><br/>
+[2024-05-22 08:36:42,997 INFO com.maybestore.Testcase_Register] - ---------------------- PASSED -----------------------
+<br><br/>
+[2024-05-22 08:36:43,003 INFO com.maybestore.Testcase_Register] - ---------------------- PASSED -----------------------
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.maybestore.Testcase_Register@d554c5f</td></tr>
+<tr>
+<td title='com.maybestore.Testcase_Register.TC_02_RegisterWithEmptyLastName()'><b>TC_02_RegisterWithEmptyLastName</b><br>Test class: com.maybestore.Testcase_Register<br>Parameters: chrome<br/>
+<a href="#Output-1738019669" onClick='toggleBox("Output-1738019669", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1738019669" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1738019669">
+[2024-05-22 08:36:46,853 INFO com.maybestore.Testcase_Register] - Step 1: Hover register link
+<br><br/>
+[2024-05-22 08:36:47,260 INFO com.maybestore.Testcase_Register] - Step 2: Click register link
+<br><br/>
+[2024-05-22 08:36:48,484 INFO com.maybestore.Testcase_Register] - Step 2: Click open Register page
+<br><br/>
+[2024-05-22 08:36:48,484 INFO com.maybestore.Testcase_Register] - Step 3: Sendkey Lastname
+<br><br/>
+[2024-05-22 08:36:48,677 INFO com.maybestore.Testcase_Register] - Step 4: Sendkey Firstname
+<br><br/>
+[2024-05-22 08:36:48,909 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey phone
+<br><br/>
+[2024-05-22 08:36:49,299 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey email test65412@gmail.com
+<br><br/>
+[2024-05-22 08:36:49,300 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey pass
+<br><br/>
+[2024-05-22 08:36:49,398 INFO com.maybestore.Testcase_Register] - Step 6: Click button Register
+<br><br/>
+[2024-05-22 08:36:49,621 INFO com.maybestore.Testcase_Register] - Step 7: Validation Message
+<br><br/>
+[2024-05-22 08:36:49,716 INFO com.maybestore.Testcase_Register] - ---------------------- PASSED -----------------------
+<br><br/>
+[2024-05-22 08:36:49,721 INFO com.maybestore.Testcase_Register] - ---------------------- PASSED -----------------------
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.maybestore.Testcase_Register@d554c5f</td></tr>
+<tr>
+<td title='com.maybestore.Testcase_Register.TC_03_RegisterWithEmptyFirstName()'><b>TC_03_RegisterWithEmptyFirstName</b><br>Test class: com.maybestore.Testcase_Register<br>Parameters: chrome<br/>
+<a href="#Output-1304363241" onClick='toggleBox("Output-1304363241", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1304363241" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1304363241">
+[2024-05-22 08:37:09,696 INFO com.maybestore.Testcase_Register] - Step 1: Hover register link
+<br><br/>
+[2024-05-22 08:37:09,959 INFO com.maybestore.Testcase_Register] - Step 2: Click register link
+<br><br/>
+[2024-05-22 08:37:10,953 INFO com.maybestore.Testcase_Register] - Step 2: Click open Register page
+<br><br/>
+[2024-05-22 08:37:10,953 INFO com.maybestore.Testcase_Register] - Step 3: Sendkey Lastname
+<br><br/>
+[2024-05-22 08:37:11,221 INFO com.maybestore.Testcase_Register] - Step 4: Sendkey Firstname
+<br><br/>
+[2024-05-22 08:37:11,351 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey phone
+<br><br/>
+[2024-05-22 08:37:11,514 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey email
+<br><br/>
+[2024-05-22 08:37:11,613 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey pass
+<br><br/>
+[2024-05-22 08:37:11,684 INFO com.maybestore.Testcase_Register] - Step 6: Click button Register
+<br><br/>
+[2024-05-22 08:37:11,830 INFO com.maybestore.Testcase_Register] - Step 7: Validation Message
+<br><br/>
+[2024-05-22 08:37:11,877 INFO com.maybestore.Testcase_Register] - ---------------------- PASSED -----------------------
+<br><br/>
+[2024-05-22 08:37:11,906 INFO com.maybestore.Testcase_Register] - ---------------------- PASSED -----------------------
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.maybestore.Testcase_Register@d554c5f</td></tr>
+<tr>
+<td title='com.maybestore.Testcase_Register.TC_04_IsValidPhoneNumberLength()'><b>TC_04_IsValidPhoneNumberLength</b><br>Test class: com.maybestore.Testcase_Register<br>Parameters: chrome<br/>
+<a href="#Output-510520469" onClick='toggleBox("Output-510520469", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-510520469" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-510520469">
+[2024-05-22 08:37:43,133 INFO com.maybestore.Testcase_Register] - Step 1: Hover register link
+<br><br/>
+[2024-05-22 08:37:43,372 INFO com.maybestore.Testcase_Register] - Step 2: Click register link
+<br><br/>
+[2024-05-22 08:38:04,118 INFO com.maybestore.Testcase_Register] - Step 2: Click open Register page
+<br><br/>
+[2024-05-22 08:38:04,119 INFO com.maybestore.Testcase_Register] - Step 3: Sendkey Lastname
+<br><br/>
+[2024-05-22 08:38:04,513 INFO com.maybestore.Testcase_Register] - Step 4: Sendkey Firstname
+<br><br/>
+[2024-05-22 08:38:04,798 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey phone
+<br><br/>
+[2024-05-22 08:38:05,024 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey email :test63812@gmail.com
+<br><br/>
+[2024-05-22 08:38:05,024 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey pass
+<br><br/>
+[2024-05-22 08:38:05,132 INFO com.maybestore.Testcase_Register] - Step 6: Click button Register
+<br><br/>
+[2024-05-22 08:38:06,104 INFO com.maybestore.Testcase_Register] - Step 7: Validation Message
+<br><br/>
+[2024-05-22 08:38:06,160 INFO com.maybestore.Testcase_Register] - ---------------------- PASSED -----------------------
+<br><br/>
+[2024-05-22 08:38:16,329 INFO com.maybestore.Testcase_Register] - ---------------------- PASSED -----------------------
+<br><br/>
+[2024-05-22 08:38:16,329 INFO com.maybestore.Testcase_Register] - ---------------------- PASSED -----------------------
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>33</td>
+<td>com.maybestore.Testcase_Register@d554c5f</td></tr>
+<tr>
+<td title='com.maybestore.Testcase_Register.TC_04_RegisterWithEmptyPhone()'><b>TC_04_RegisterWithEmptyPhone</b><br>Test class: com.maybestore.Testcase_Register<br>Parameters: chrome<br/>
+<a href="#Output-796365622" onClick='toggleBox("Output-796365622", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-796365622" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-796365622">
+[2024-05-22 08:38:18,379 INFO com.maybestore.Testcase_Register] - Step 1: Hover register link
+<br><br/>
+[2024-05-22 08:38:18,794 INFO com.maybestore.Testcase_Register] - Step 2: Click register link
+<br><br/>
+[2024-05-22 08:38:29,572 INFO com.maybestore.Testcase_Register] - Step 2: Click open Register page
+<br><br/>
+[2024-05-22 08:38:29,572 INFO com.maybestore.Testcase_Register] - Step 3: Sendkey Lastname
+<br><br/>
+[2024-05-22 08:38:30,012 INFO com.maybestore.Testcase_Register] - Step 4: Sendkey Firstname
+<br><br/>
+[2024-05-22 08:38:30,114 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey phone
+<br><br/>
+[2024-05-22 08:38:30,272 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey email test47203@gmail.com
+<br><br/>
+[2024-05-22 08:38:30,272 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey pass
+<br><br/>
+[2024-05-22 08:38:30,342 INFO com.maybestore.Testcase_Register] - Step 6: Click button Register
+<br><br/>
+[2024-05-22 08:38:30,527 INFO com.maybestore.Testcase_Register] - Step 7: Validation Message
+<br><br/>
+[2024-05-22 08:38:30,620 INFO com.maybestore.Testcase_Register] - ---------------------- PASSED -----------------------
+<br><br/>
+[2024-05-22 08:38:30,685 INFO com.maybestore.Testcase_Register] - ---------------------- PASSED -----------------------
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>com.maybestore.Testcase_Register@d554c5f</td></tr>
+<tr>
+<td title='com.maybestore.Testcase_Register.TC_04_RegisterWithInvalidPhoneNumber()'><b>TC_04_RegisterWithInvalidPhoneNumber</b><br>Test class: com.maybestore.Testcase_Register<br>Parameters: chrome<br/>
+<a href="#Output-451942215" onClick='toggleBox("Output-451942215", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-451942215" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-451942215">
+[2024-05-22 08:38:34,180 INFO com.maybestore.Testcase_Register] - Step 1: Hover register link
+<br><br/>
+[2024-05-22 08:38:34,581 INFO com.maybestore.Testcase_Register] - Step 2: Click register link
+<br><br/>
+[2024-05-22 08:38:35,534 INFO com.maybestore.Testcase_Register] - Step 2: Click open Register page
+<br><br/>
+[2024-05-22 08:38:35,534 INFO com.maybestore.Testcase_Register] - Step 3: Sendkey Lastname
+<br><br/>
+[2024-05-22 08:38:35,673 INFO com.maybestore.Testcase_Register] - Step 4: Sendkey Firstname
+<br><br/>
+[2024-05-22 08:38:35,907 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey phone
+<br><br/>
+[2024-05-22 08:38:36,145 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey email test16243@gmail.com
+<br><br/>
+[2024-05-22 08:38:36,145 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey pass
+<br><br/>
+[2024-05-22 08:38:36,207 INFO com.maybestore.Testcase_Register] - Step 6: Click button Register
+<br><br/>
+[2024-05-22 08:38:36,373 INFO com.maybestore.Testcase_Register] - Step 7: Validation Message
+<br><br/>
+[2024-05-22 08:38:36,432 INFO com.maybestore.Testcase_Register] - ---------------------- PASSED -----------------------
+<br><br/>
+[2024-05-22 08:38:36,439 INFO com.maybestore.Testcase_Register] - ---------------------- PASSED -----------------------
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.maybestore.Testcase_Register@d554c5f</td></tr>
+<tr>
+<td title='com.maybestore.Testcase_Register.TC_04_RegisterWithPhoneNumberContainingSpaces()'><b>TC_04_RegisterWithPhoneNumberContainingSpaces</b><br>Test class: com.maybestore.Testcase_Register<br>Parameters: chrome<br/>
+<a href="#Output-1542433154" onClick='toggleBox("Output-1542433154", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1542433154" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1542433154">
+[2024-05-22 08:38:39,867 INFO com.maybestore.Testcase_Register] - Step 1: Hover register link
+<br><br/>
+[2024-05-22 08:38:40,358 INFO com.maybestore.Testcase_Register] - Step 2: Click register link
+<br><br/>
+[2024-05-22 08:38:41,532 INFO com.maybestore.Testcase_Register] - Step 2: Click open Register page
+<br><br/>
+[2024-05-22 08:38:41,532 INFO com.maybestore.Testcase_Register] - Step 3: Sendkey Lastname
+<br><br/>
+[2024-05-22 08:38:41,700 INFO com.maybestore.Testcase_Register] - Step 4: Sendkey Firstname
+<br><br/>
+[2024-05-22 08:38:41,959 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey phone
+<br><br/>
+[2024-05-22 08:38:42,141 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey email :test14906@gmail.com
+<br><br/>
+[2024-05-22 08:38:42,142 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey pass
+<br><br/>
+[2024-05-22 08:38:42,239 INFO com.maybestore.Testcase_Register] - Step 6: Click button Register
+<br><br/>
+[2024-05-22 08:38:42,485 INFO com.maybestore.Testcase_Register] - Step 7: Validation Message
+<br><br/>
+[2024-05-22 08:38:42,537 INFO com.maybestore.Testcase_Register] - ---------------------- PASSED -----------------------
+<br><br/>
+[2024-05-22 08:38:42,537 INFO com.maybestore.Testcase_Register] - ---------------------- PASSED -----------------------
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.maybestore.Testcase_Register@d554c5f</td></tr>
+<tr>
+<td title='com.maybestore.Testcase_Register.TC_05_RegisterWithEmailMissingAtSymbol()'><b>TC_05_RegisterWithEmailMissingAtSymbol</b><br>Test class: com.maybestore.Testcase_Register<br>Parameters: chrome<br/>
+<a href="#Output-1042080462" onClick='toggleBox("Output-1042080462", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1042080462" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1042080462">
+[2024-05-22 08:38:45,552 INFO com.maybestore.Testcase_Register] - Step 1: Hover register link
+<br><br/>
+[2024-05-22 08:38:45,802 INFO com.maybestore.Testcase_Register] - Step 2: Click register link
+<br><br/>
+[2024-05-22 08:39:06,510 INFO com.maybestore.Testcase_Register] - Step 2: Click open Register page
+<br><br/>
+[2024-05-22 08:39:06,510 INFO com.maybestore.Testcase_Register] - Step 3: Sendkey Lastname
+<br><br/>
+[2024-05-22 08:39:06,911 INFO com.maybestore.Testcase_Register] - Step 4: Sendkey Firstname
+<br><br/>
+[2024-05-22 08:39:07,106 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey phone
+<br><br/>
+[2024-05-22 08:39:07,185 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey email
+<br><br/>
+[2024-05-22 08:39:07,270 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey pass
+<br><br/>
+[2024-05-22 08:39:07,355 INFO com.maybestore.Testcase_Register] - Step 6: Click button Register
+<br><br/>
+[2024-05-22 08:39:07,483 INFO com.maybestore.Testcase_Register] - Step 7: Validation Message
+<br><br/>
+[2024-05-22 08:39:07,568 INFO com.maybestore.Testcase_Register] - ---------------------- PASSED -----------------------
+<br><br/>
+[2024-05-22 08:39:07,596 INFO com.maybestore.Testcase_Register] - ---------------------- PASSED -----------------------
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>22</td>
+<td>com.maybestore.Testcase_Register@d554c5f</td></tr>
+<tr>
+<td title='com.maybestore.Testcase_Register.TC_05_RegisterWithEmailMissingDomain()'><b>TC_05_RegisterWithEmailMissingDomain</b><br>Test class: com.maybestore.Testcase_Register<br>Parameters: chrome<br/>
+<a href="#Output-218477492" onClick='toggleBox("Output-218477492", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-218477492" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-218477492">
+[2024-05-22 08:39:11,200 INFO com.maybestore.Testcase_Register] - Step 1: Hover register link
+<br><br/>
+[2024-05-22 08:39:11,487 INFO com.maybestore.Testcase_Register] - Step 2: Click register link
+<br><br/>
+[2024-05-22 08:39:32,153 INFO com.maybestore.Testcase_Register] - Step 2: Click open Register page
+<br><br/>
+[2024-05-22 08:39:32,153 INFO com.maybestore.Testcase_Register] - Step 3: Sendkey Lastname
+<br><br/>
+[2024-05-22 08:39:32,419 INFO com.maybestore.Testcase_Register] - Step 4: Sendkey Firstname
+<br><br/>
+[2024-05-22 08:39:32,698 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey phone
+<br><br/>
+[2024-05-22 08:39:32,835 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey email
+<br><br/>
+[2024-05-22 08:39:33,020 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey pass
+<br><br/>
+[2024-05-22 08:39:33,301 INFO com.maybestore.Testcase_Register] - Step 6: Click button Register
+<br><br/>
+[2024-05-22 08:39:33,554 INFO com.maybestore.Testcase_Register] - Step 7: Validation Message
+<br><br/>
+[2024-05-22 08:39:33,618 INFO com.maybestore.Testcase_Register] - ---------------------- PASSED -----------------------
+<br><br/>
+[2024-05-22 08:39:33,634 INFO com.maybestore.Testcase_Register] - ---------------------- PASSED -----------------------
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>22</td>
+<td>com.maybestore.Testcase_Register@d554c5f</td></tr>
+<tr>
+<td title='com.maybestore.Testcase_Register.TC_05_RegisterWithEmailMissingUsername()'><b>TC_05_RegisterWithEmailMissingUsername</b><br>Test class: com.maybestore.Testcase_Register<br>Parameters: chrome<br/>
+<a href="#Output-1510271017" onClick='toggleBox("Output-1510271017", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1510271017" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1510271017">
+[2024-05-22 08:39:36,458 INFO com.maybestore.Testcase_Register] - Step 1: Hover register link
+<br><br/>
+[2024-05-22 08:39:36,901 INFO com.maybestore.Testcase_Register] - Step 2: Click register link
+<br><br/>
+[2024-05-22 08:39:57,529 INFO com.maybestore.Testcase_Register] - Step 2: Click open Register page
+<br><br/>
+[2024-05-22 08:39:57,529 INFO com.maybestore.Testcase_Register] - Step 3: Sendkey Lastname
+<br><br/>
+[2024-05-22 08:39:57,897 INFO com.maybestore.Testcase_Register] - Step 4: Sendkey Firstname
+<br><br/>
+[2024-05-22 08:39:58,015 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey phone
+<br><br/>
+[2024-05-22 08:39:58,074 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey email
+<br><br/>
+[2024-05-22 08:39:58,156 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey pass
+<br><br/>
+[2024-05-22 08:39:58,219 INFO com.maybestore.Testcase_Register] - Step 6: Click button Register
+<br><br/>
+[2024-05-22 08:39:58,345 INFO com.maybestore.Testcase_Register] - Step 7: Validation Message
+<br><br/>
+[2024-05-22 08:39:58,409 INFO com.maybestore.Testcase_Register] - ---------------------- PASSED -----------------------
+<br><br/>
+[2024-05-22 08:39:58,409 INFO com.maybestore.Testcase_Register] - ---------------------- PASSED -----------------------
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>com.maybestore.Testcase_Register@d554c5f</td></tr>
+<tr>
+<td title='com.maybestore.Testcase_Register.TC_05_RegisterWithEmptyEmail()'><b>TC_05_RegisterWithEmptyEmail</b><br>Test class: com.maybestore.Testcase_Register<br>Parameters: chrome<br/>
+<a href="#Output-1861432015" onClick='toggleBox("Output-1861432015", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1861432015" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1861432015">
+[2024-05-22 08:40:01,508 INFO com.maybestore.Testcase_Register] - Step 1: Hover register link
+<br><br/>
+[2024-05-22 08:40:01,791 INFO com.maybestore.Testcase_Register] - Step 2: Click register link
+<br><br/>
+[2024-05-22 08:40:02,794 INFO com.maybestore.Testcase_Register] - Step 2: Click open Register page
+<br><br/>
+[2024-05-22 08:40:02,795 INFO com.maybestore.Testcase_Register] - Step 3: Sendkey Lastname
+<br><br/>
+[2024-05-22 08:40:03,061 INFO com.maybestore.Testcase_Register] - Step 4: Sendkey Firstname
+<br><br/>
+[2024-05-22 08:40:03,141 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey phone
+<br><br/>
+[2024-05-22 08:40:03,284 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey email 
+<br><br/>
+[2024-05-22 08:40:03,284 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey pass
+<br><br/>
+[2024-05-22 08:40:03,395 INFO com.maybestore.Testcase_Register] - Step 6: Click button Register
+<br><br/>
+[2024-05-22 08:40:03,572 INFO com.maybestore.Testcase_Register] - Step 7: Validation Message
+<br><br/>
+[2024-05-22 08:40:03,600 INFO com.maybestore.Testcase_Register] - ---------------------- PASSED -----------------------
+<br><br/>
+[2024-05-22 08:40:03,615 INFO com.maybestore.Testcase_Register] - ---------------------- PASSED -----------------------
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.maybestore.Testcase_Register@d554c5f</td></tr>
+<tr>
+<td title='com.maybestore.Testcase_Register.TC_06_RegisterWithExistingEmail()'><b>TC_06_RegisterWithExistingEmail</b><br>Test class: com.maybestore.Testcase_Register<br>Parameters: chrome<br/>
+<a href="#Output-421851845" onClick='toggleBox("Output-421851845", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-421851845" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-421851845">
+[2024-05-22 08:40:07,198 INFO com.maybestore.Testcase_Register] - Step 1: Hover register link
+<br><br/>
+[2024-05-22 08:40:07,422 INFO com.maybestore.Testcase_Register] - Step 2: Click register link
+<br><br/>
+[2024-05-22 08:40:08,644 INFO com.maybestore.Testcase_Register] - Step 2: Click open Register page
+<br><br/>
+[2024-05-22 08:40:08,645 INFO com.maybestore.Testcase_Register] - Step 3: Sendkey Lastname
+<br><br/>
+[2024-05-22 08:40:08,990 INFO com.maybestore.Testcase_Register] - Step 4: Sendkey Firstname
+<br><br/>
+[2024-05-22 08:40:09,073 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey phone
+<br><br/>
+[2024-05-22 08:40:09,156 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey email
+<br><br/>
+[2024-05-22 08:40:09,236 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey pass
+<br><br/>
+[2024-05-22 08:40:09,295 INFO com.maybestore.Testcase_Register] - Step 6: Click button Register
+<br><br/>
+[2024-05-22 08:40:10,142 INFO com.maybestore.Testcase_Register] - Step 7: Validation Message
+<br><br/>
+[2024-05-22 08:40:30,243 INFO com.maybestore.Testcase_Register] - ---------------------- PASSED -----------------------
+<br><br/>
+[2024-05-22 08:40:30,291 INFO com.maybestore.Testcase_Register] - ---------------------- PASSED -----------------------
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>23</td>
+<td>com.maybestore.Testcase_Register@d554c5f</td></tr>
+<tr>
+<td title='com.maybestore.Testcase_Register.TC_07_RegisterWithEmptyPassword()'><b>TC_07_RegisterWithEmptyPassword</b><br>Test class: com.maybestore.Testcase_Register<br>Parameters: chrome<br/>
+<a href="#Output-1904496987" onClick='toggleBox("Output-1904496987", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1904496987" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1904496987">
+[2024-05-22 08:40:32,937 INFO com.maybestore.Testcase_Register] - Step 1: Hover register link
+<br><br/>
+[2024-05-22 08:40:33,281 INFO com.maybestore.Testcase_Register] - Step 2: Click register link
+<br><br/>
+[2024-05-22 08:40:43,861 INFO com.maybestore.Testcase_Register] - Step 2: Click open Register page
+<br><br/>
+[2024-05-22 08:40:43,861 INFO com.maybestore.Testcase_Register] - Step 3: Sendkey Lastname
+<br><br/>
+[2024-05-22 08:40:44,182 INFO com.maybestore.Testcase_Register] - Step 4: Sendkey Firstname
+<br><br/>
+[2024-05-22 08:40:44,259 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey phone
+<br><br/>
+[2024-05-22 08:40:44,354 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey email
+<br><br/>
+[2024-05-22 08:40:44,444 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey pass
+<br><br/>
+[2024-05-22 08:40:44,529 INFO com.maybestore.Testcase_Register] - Step 6: Click button Register
+<br><br/>
+[2024-05-22 08:40:44,687 INFO com.maybestore.Testcase_Register] - Step 7: Validation Message
+<br><br/>
+[2024-05-22 08:40:44,762 INFO com.maybestore.Testcase_Register] - ---------------------- PASSED -----------------------
+<br><br/>
+[2024-05-22 08:40:44,777 INFO com.maybestore.Testcase_Register] - ---------------------- PASSED -----------------------
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>com.maybestore.Testcase_Register@d554c5f</td></tr>
+<tr>
+<td title='com.maybestore.Testcase_Register.TC_07_RegisterWithLenghtFivePassword()'><b>TC_07_RegisterWithLenghtFivePassword</b><br>Test class: com.maybestore.Testcase_Register<br/>
+<a href="#Output-293533474" onClick='toggleBox("Output-293533474", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-293533474" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-293533474">
+[2024-05-22 08:40:47,583 INFO com.maybestore.Testcase_Register] - Step 1: Hover register link
+<br><br/>
+[2024-05-22 08:40:47,877 INFO com.maybestore.Testcase_Register] - Step 2: Click register link
+<br><br/>
+[2024-05-22 08:40:48,903 INFO com.maybestore.Testcase_Register] - Step 2: Click open Register page
+<br><br/>
+[2024-05-22 08:40:48,903 INFO com.maybestore.Testcase_Register] - Step 3: Sendkey Lastname
+<br><br/>
+[2024-05-22 08:40:49,156 INFO com.maybestore.Testcase_Register] - Step 4: Sendkey Firstname
+<br><br/>
+[2024-05-22 08:40:49,271 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey phone
+<br><br/>
+[2024-05-22 08:40:49,439 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey email :test26424@gmail.com
+<br><br/>
+[2024-05-22 08:40:49,439 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey pass : 56789
+<br><br/>
+[2024-05-22 08:40:49,508 INFO com.maybestore.Testcase_Register] - Step 6: Click button Register
+<br><br/>
+[2024-05-22 08:41:10,269 INFO com.maybestore.Testcase_Register] - Step 7: Validation Message
+<br><br/>
+[2024-05-22 08:41:10,348 INFO com.maybestore.Testcase_Register] - ---------------------- PASSED -----------------------
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>22</td>
+<td>com.maybestore.Testcase_Register@d554c5f</td></tr>
+<tr>
+<td title='com.maybestore.Testcase_Register.TC_07_RegisterWithLenghtFourPassword()'><b>TC_07_RegisterWithLenghtFourPassword</b><br>Test class: com.maybestore.Testcase_Register<br/>
+<a href="#Output-2027957492" onClick='toggleBox("Output-2027957492", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2027957492" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2027957492">
+[2024-05-22 08:41:13,636 INFO com.maybestore.Testcase_Register] - Step 1: Hover register link
+<br><br/>
+[2024-05-22 08:41:13,891 INFO com.maybestore.Testcase_Register] - Step 2: Click register link
+<br><br/>
+[2024-05-22 08:41:14,862 INFO com.maybestore.Testcase_Register] - Step 2: Click open Register page
+<br><br/>
+[2024-05-22 08:41:14,863 INFO com.maybestore.Testcase_Register] - Step 3: Sendkey Lastname
+<br><br/>
+[2024-05-22 08:41:15,112 INFO com.maybestore.Testcase_Register] - Step 4: Sendkey Firstname
+<br><br/>
+[2024-05-22 08:41:15,196 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey phone
+<br><br/>
+[2024-05-22 08:41:15,265 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey email
+<br><br/>
+[2024-05-22 08:41:15,348 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey email :test29431@gmail.com
+<br><br/>
+[2024-05-22 08:41:15,348 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey pass
+<br><br/>
+[2024-05-22 08:41:15,435 INFO com.maybestore.Testcase_Register] - Step 6: Click button Register
+<br><br/>
+[2024-05-22 08:41:16,039 INFO com.maybestore.Testcase_Register] - Step 7: Validation Message
+<br><br/>
+[2024-05-22 08:42:06,079 INFO com.maybestore.Testcase_Register] - ---------------------- PASSED -----------------------
+<br><br/>
+[2024-05-22 08:42:06,107 INFO com.maybestore.Testcase_Register] - ---------------------- PASSED -----------------------
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>52</td>
+<td>com.maybestore.Testcase_Register@d554c5f</td></tr>
+<tr>
+<td title='com.maybestore.Testcase_Register.TC_07_RegisterWithLenghtSixPassword()'><b>TC_07_RegisterWithLenghtSixPassword</b><br>Test class: com.maybestore.Testcase_Register<br/>
+<a href="#Output-1161176649" onClick='toggleBox("Output-1161176649", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1161176649" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1161176649">
+[2024-05-22 08:42:10,392 INFO com.maybestore.Testcase_Register] - Step 1: Hover register link
+<br><br/>
+[2024-05-22 08:42:10,642 INFO com.maybestore.Testcase_Register] - Step 2: Click register link
+<br><br/>
+[2024-05-22 08:42:21,328 INFO com.maybestore.Testcase_Register] - Step 2: Click open Register page
+<br><br/>
+[2024-05-22 08:42:21,328 INFO com.maybestore.Testcase_Register] - Step 3: Sendkey Lastname
+<br><br/>
+[2024-05-22 08:42:21,628 INFO com.maybestore.Testcase_Register] - Step 4: Sendkey Firstname
+<br><br/>
+[2024-05-22 08:42:21,708 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey phone
+<br><br/>
+[2024-05-22 08:42:21,783 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey email : test59275@gmail.com
+<br><br/>
+[2024-05-22 08:42:21,861 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey pass : 123456
+<br><br/>
+[2024-05-22 08:42:31,930 INFO com.maybestore.Testcase_Register] - Step 6: Click button Register
+<br><br/>
+[2024-05-22 08:42:32,881 INFO com.maybestore.Testcase_Register] - Step 7: Validation Message
+<br><br/>
+[2024-05-22 08:42:32,881 INFO com.maybestore.Testcase_Register] - Step 7: Validation Message
+<br><br/>
+[2024-05-22 08:42:52,926 INFO com.maybestore.Testcase_Register] - ---------------------- PASSED -----------------------
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>42</td>
+<td>com.maybestore.Testcase_Register@d554c5f</td></tr>
+<tr>
+<td title='com.maybestore.Testcase_Register.TC_07_RegisterWithWhitespacePassword()'><b>TC_07_RegisterWithWhitespacePassword</b><br>Test class: com.maybestore.Testcase_Register<br/>
+<a href="#Output-29429036" onClick='toggleBox("Output-29429036", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-29429036" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-29429036">
+[2024-05-22 08:42:56,107 INFO com.maybestore.Testcase_Register] - Step 1: Hover register link
+<br><br/>
+[2024-05-22 08:42:56,368 INFO com.maybestore.Testcase_Register] - Step 2: Click register link
+<br><br/>
+[2024-05-22 08:43:07,026 INFO com.maybestore.Testcase_Register] - Step 2: Click open Register page
+<br><br/>
+[2024-05-22 08:43:07,026 INFO com.maybestore.Testcase_Register] - Step 3: Sendkey Lastname
+<br><br/>
+[2024-05-22 08:43:07,296 INFO com.maybestore.Testcase_Register] - Step 4: Sendkey Firstname
+<br><br/>
+[2024-05-22 08:43:07,390 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey phone
+<br><br/>
+[2024-05-22 08:43:07,474 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey email
+<br><br/>
+[2024-05-22 08:43:07,567 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey email :test49910@gmail.com
+<br><br/>
+[2024-05-22 08:43:07,567 INFO com.maybestore.Testcase_Register] - Step 5: Sendkey pass
+<br><br/>
+[2024-05-22 08:43:07,681 INFO com.maybestore.Testcase_Register] - Step 6: Click button Register
+<br><br/>
+[2024-05-22 08:43:08,506 INFO com.maybestore.Testcase_Register] - Step 7: Validation Message
+<br><br/>
+[2024-05-22 08:43:28,540 INFO com.maybestore.Testcase_Register] - ---------------------- PASSED -----------------------
+<br><br/>
+[2024-05-22 08:43:28,567 INFO com.maybestore.Testcase_Register] - ---------------------- PASSED -----------------------
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>32</td>
+<td>com.maybestore.Testcase_Register@d554c5f</td></tr>
+</table><p>
+</body>
+</html>

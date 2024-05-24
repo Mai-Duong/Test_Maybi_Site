@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - Run on CHROME</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>Run on CHROME</h1>
+<p>
+  Test duration: 147,450s
+</p>
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.maybestore.Login_demo</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  TC_08_IncorrectDomainAfterAtSignInEmail
+      </td>
+  <td class="duration">
+    7,134s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [2024-04-25 21:30:27,312 INFO com.maybestore.Login_demo] - Step 1: Hover login span 
+<br>
+                                [2024-04-25 21:30:27,610 INFO com.maybestore.Login_demo] - Step 2: Click button login 
+<br>
+                                [2024-04-25 21:30:28,825 INFO com.maybestore.Login_demo] - Step 3: Open Login Page 
+<br>
+                                [2024-04-25 21:30:28,825 INFO com.maybestore.Login_demo] - Step 4: Sendkey data Email Textbox 
+<br>
+                                [2024-04-25 21:30:29,193 INFO com.maybestore.Login_demo] - Step 5: Sendkey data Pass 
+<br>
+                                [2024-04-25 21:30:29,311 INFO com.maybestore.Login_demo] - Step 6: Click Button Login
+<br>
+                                [2024-04-25 21:30:31,252 INFO com.maybestore.Login_demo] - ---------------------- PASSED -----------------------
+<br>
+                                [2024-04-25 21:30:31,268 INFO com.maybestore.Login_demo] - Step 7: Verify
+<br>
+                                [2024-04-25 21:30:31,268 INFO com.maybestore.Login_demo] - Step 7 :Please fill out this field.
+<br>
+                                [2024-04-25 21:30:31,415 INFO com.maybestore.Login_demo] - ---------------------- PASSED -----------------------
+<br>
+                                [2024-04-25 21:30:34,445 INFO com.maybestore.Login_demo] - ---------------------- FAILED -----------------------
+<br>
+                                <br><a target="_blank" href="file:///D:\prject-traning\Online_Class_22\01-software\eclipse-java-2022-03-R-win32-x86_64\workspace\test-maybi-site/reportNGScreenshortRegister/TC_08_IncorrectDomainAfterAtSignInEmail_25_04_2024_09_30_34.png"><img src="file:///D:\prject-traning\Online_Class_22\01-software\eclipse-java-2022-03-R-win32-x86_64\workspace\test-maybi-site/reportNGScreenshortRegister/TC_08_IncorrectDomainAfterAtSignInEmail_25_04_2024_09_30_34.png" height='100' width='150'/> </a></br>
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [Thông tin đăng nhập không hợp lệ.] but found [Số điện thoại không hợp lệ.]</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              org.testng.Assert.fail(Assert.java:96)<br />
+              org.testng.Assert.failNotEquals(Assert.java:776)<br />
+              org.testng.Assert.assertEqualsImpl(Assert.java:137)<br />
+              org.testng.Assert.assertEquals(Assert.java:118)<br />
+              org.testng.Assert.assertEquals(Assert.java:442)<br />
+              commons.BaseTest.verifyEquals(BaseTest.java:105)<br />
+              com.maybestore.Login_demo.TC_08_IncorrectDomainAfterAtSignInEmail(Login_demo.java:291)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br />
+              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:568)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
+              org.testng.TestRunner.run(TestRunner.java:505)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1049)<br />
+              org.testng.TestNG.run(TestNG.java:1017)<br />
+              org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  TC_12_ValidEmailAndPassword_Login
+      </td>
+  <td class="duration">
+    35,620s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [2024-04-25 21:31:10,007 INFO com.maybestore.Login_demo] - TC_12_ValidEmailAndPassword_LoginStep 1: Hover login span 
+<br>
+                                [2024-04-25 21:31:15,454 INFO com.maybestore.Login_demo] - TC_12_ValidEmailAndPassword_LoginStep 2: Click button login 
+<br>
+                                <br><a target="_blank" href="file:///D:\prject-traning\Online_Class_22\01-software\eclipse-java-2022-03-R-win32-x86_64\workspace\test-maybi-site/reportNGScreenshortRegister/TC_12_ValidEmailAndPassword_Login_25_04_2024_09_31_45.png"><img src="file:///D:\prject-traning\Online_Class_22\01-software\eclipse-java-2022-03-R-win32-x86_64\workspace\test-maybi-site/reportNGScreenshortRegister/TC_12_ValidEmailAndPassword_Login_25_04_2024_09_31_45.png" height='100' width='150'/> </a></br>
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: (//a[@title=&apos;Đăng nhập&apos;])[1] (tried for 30 second(s) with 500 milliseconds interval)<br/>
+Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;<br/>
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.124, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52286}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52286/devtoo..., se:cdpVersion: 123.0.6312.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}<br/>
+Session ID: a52f97f80f01547c7ddbf533d9974188</b></a><br />
+    <div class="stackTrace" id="exception-1">
+              org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)<br />
+              org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)<br />
+              commons.BasePage.waitForElementVisible(BasePage.java:447)<br />
+              pageObjects.maybistore.HomeObject.clickToLoginLink(HomeObject.java:27)<br />
+              com.maybestore.Login_demo.TC_12_ValidEmailAndPassword_Login(Login_demo.java:401)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br />
+              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:568)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
+              org.testng.TestRunner.run(TestRunner.java:505)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1049)<br />
+              org.testng.TestNG.run(TestNG.java:1017)<br />
+              org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
+                </div>
+      </td>
+</tr>
+      </table>
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.maybestore.Login_demo</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  TC_0001_EmptyEmailAndPasswordFields
+      </td>
+  <td class="duration">
+    5,893s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [2024-04-25 21:29:25,573 INFO com.maybestore.Login_demo] - Step 1: Hover login span 
+<br>
+                                [2024-04-25 21:29:27,173 INFO com.maybestore.Login_demo] - Step 2: Click button login 
+<br>
+                                [2024-04-25 21:29:29,558 INFO com.maybestore.Login_demo] - Step 3: Open Login Page 
+<br>
+                                [2024-04-25 21:29:30,408 INFO com.maybestore.Login_demo] - Step 6: Click Button Login
+<br>
+                                [2024-04-25 21:29:31,390 INFO com.maybestore.Login_demo] - Step 7: Click Button Login
+<br>
+                                [2024-04-25 21:29:31,443 INFO com.maybestore.Login_demo] - ---------------------- PASSED -----------------------
+<br>
+                                [2024-04-25 21:29:31,461 INFO com.maybestore.Login_demo] - ---------------------- PASSED -----------------------
+<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  TC_01_EmptyEmailAndPasswordFields
+      </td>
+  <td class="duration">
+    2,381s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [2024-04-25 21:29:36,367 INFO com.maybestore.Login_demo] - Step 1: Hover login span 
+<br>
+                                [2024-04-25 21:29:36,787 INFO com.maybestore.Login_demo] - Step 2: Click button login 
+<br>
+                                [2024-04-25 21:29:38,050 INFO com.maybestore.Login_demo] - Step 3: Open Login Page 
+<br>
+                                [2024-04-25 21:29:38,050 INFO com.maybestore.Login_demo] - Step 4: Sendkey data Email Textbox 
+<br>
+                                [2024-04-25 21:29:38,409 INFO com.maybestore.Login_demo] - Step 5: Sendkey data Pass 
+<br>
+                                [2024-04-25 21:29:38,501 INFO com.maybestore.Login_demo] - Step 6: Click Button Login
+<br>
+                                [2024-04-25 21:29:38,667 INFO com.maybestore.Login_demo] - Step 7: Click Button Login
+<br>
+                                [2024-04-25 21:29:38,741 INFO com.maybestore.Login_demo] - ---------------------- PASSED -----------------------
+<br>
+                                [2024-04-25 21:29:38,746 INFO com.maybestore.Login_demo] - ---------------------- PASSED -----------------------
+<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  TC_02_CorrectEmailFieldValidation
+      </td>
+  <td class="duration">
+    2,399s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [2024-04-25 21:29:41,893 INFO com.maybestore.Login_demo] - Step 1: Hover login span 
+<br>
+                                [2024-04-25 21:29:42,180 INFO com.maybestore.Login_demo] - Step 2: Click button login 
+<br>
+                                [2024-04-25 21:29:43,471 INFO com.maybestore.Login_demo] - Step 3: Open Login Page 
+<br>
+                                [2024-04-25 21:29:43,471 INFO com.maybestore.Login_demo] - Step 4: Sendkey data Email Textbox 
+<br>
+                                [2024-04-25 21:29:43,978 INFO com.maybestore.Login_demo] - Step 5: Sendkey data Pass 
+<br>
+                                [2024-04-25 21:29:44,067 INFO com.maybestore.Login_demo] - Step 6: Click Button Login
+<br>
+                                [2024-04-25 21:29:44,283 INFO com.maybestore.Login_demo] - ---------------------- PASSED -----------------------
+<br>
+                                [2024-04-25 21:29:44,292 INFO com.maybestore.Login_demo] - ---------------------- PASSED -----------------------
+<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  TC_03_CorrectPassFieldValidation
+      </td>
+  <td class="duration">
+    3,175s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [2024-04-25 21:29:48,197 INFO com.maybestore.Login_demo] - Step 1: Hover login span 
+<br>
+                                [2024-04-25 21:29:48,563 INFO com.maybestore.Login_demo] - Step 2: Click button login 
+<br>
+                                [2024-04-25 21:29:50,602 INFO com.maybestore.Login_demo] - Step 3: Open Login Page 
+<br>
+                                [2024-04-25 21:29:50,602 INFO com.maybestore.Login_demo] - Step 4: Sendkey data Email Textbox 
+<br>
+                                [2024-04-25 21:29:51,032 INFO com.maybestore.Login_demo] - Step 5: Sendkey data Pass 
+<br>
+                                [2024-04-25 21:29:51,113 INFO com.maybestore.Login_demo] - Step 6: Click Button Login
+<br>
+                                [2024-04-25 21:29:51,365 INFO com.maybestore.Login_demo] - ---------------------- PASSED -----------------------
+<br>
+                                [2024-04-25 21:29:51,371 INFO com.maybestore.Login_demo] - ---------------------- PASSED -----------------------
+<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  TC_04_CorrectEmailAndIncorrectPass
+      </td>
+  <td class="duration">
+    6,811s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [2024-04-25 21:29:54,691 INFO com.maybestore.Login_demo] - Step 1: Hover login span 
+<br>
+                                [2024-04-25 21:29:54,988 INFO com.maybestore.Login_demo] - Step 2: Click button login 
+<br>
+                                [2024-04-25 21:29:56,105 INFO com.maybestore.Login_demo] - Step 3: Open Login Page 
+<br>
+                                [2024-04-25 21:29:56,105 INFO com.maybestore.Login_demo] - Step 4: Sendkey data Email Textbox 
+<br>
+                                [2024-04-25 21:29:56,491 INFO com.maybestore.Login_demo] - Step 5: Sendkey data Pass 
+<br>
+                                [2024-04-25 21:29:58,623 INFO com.maybestore.Login_demo] - Step 6: Click Button Login
+<br>
+                                [2024-04-25 21:30:01,476 INFO com.maybestore.Login_demo] - ---------------------- PASSED -----------------------
+<br>
+                                [2024-04-25 21:30:01,501 INFO com.maybestore.Login_demo] - ---------------------- PASSED -----------------------
+<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  TC_05_InCorrectEmailAndCorrectPass
+      </td>
+  <td class="duration">
+    3,963s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [2024-04-25 21:30:05,350 INFO com.maybestore.Login_demo] - Step 1: Hover login span 
+<br>
+                                [2024-04-25 21:30:05,590 INFO com.maybestore.Login_demo] - Step 2: Click button login 
+<br>
+                                [2024-04-25 21:30:06,868 INFO com.maybestore.Login_demo] - Step 3: Open Login Page 
+<br>
+                                [2024-04-25 21:30:06,870 INFO com.maybestore.Login_demo] - Step 4: Sendkey data Email Textbox 
+<br>
+                                [2024-04-25 21:30:07,198 INFO com.maybestore.Login_demo] - Step 5: Sendkey data Pass 
+<br>
+                                [2024-04-25 21:30:07,351 INFO com.maybestore.Login_demo] - Step 6: Click Button Login
+<br>
+                                [2024-04-25 21:30:09,216 INFO com.maybestore.Login_demo] - ---------------------- PASSED -----------------------
+<br>
+                                [2024-04-25 21:30:09,310 INFO com.maybestore.Login_demo] - ---------------------- PASSED -----------------------
+<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  TC_06_InvalidEmailFormat
+      </td>
+  <td class="duration">
+    3,306s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [2024-04-25 21:30:12,711 INFO com.maybestore.Login_demo] - Step 1: Hover login span 
+<br>
+                                [2024-04-25 21:30:13,061 INFO com.maybestore.Login_demo] - Step 2: Click button login 
+<br>
+                                [2024-04-25 21:30:14,250 INFO com.maybestore.Login_demo] - Step 3: Open Login Page 
+<br>
+                                [2024-04-25 21:30:14,250 INFO com.maybestore.Login_demo] - Step 4: Sendkey data Email Textbox 
+<br>
+                                [2024-04-25 21:30:14,597 INFO com.maybestore.Login_demo] - Step 5: Sendkey data Pass 
+<br>
+                                [2024-04-25 21:30:14,749 INFO com.maybestore.Login_demo] - Step 6: Click Button Login
+<br>
+                                [2024-04-25 21:30:14,999 INFO com.maybestore.Login_demo] - ---------------------- PASSED -----------------------
+<br>
+                                [2024-04-25 21:30:15,003 INFO com.maybestore.Login_demo] - Step 7 :Please include an '@' in the email address. 'duongmai' is missing an '@'.
+<br>
+                                [2024-04-25 21:30:16,016 INFO com.maybestore.Login_demo] - ---------------------- PASSED -----------------------
+<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  TC_07_MissingDomainAfterAtSignInEmail
+      </td>
+  <td class="duration">
+    3,411s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [2024-04-25 21:30:20,100 INFO com.maybestore.Login_demo] - Step 1: Hover login span 
+<br>
+                                [2024-04-25 21:30:20,486 INFO com.maybestore.Login_demo] - Step 2: Click button login 
+<br>
+                                [2024-04-25 21:30:22,605 INFO com.maybestore.Login_demo] - Step 3: Open Login Page 
+<br>
+                                [2024-04-25 21:30:22,605 INFO com.maybestore.Login_demo] - Step 4: Sendkey data Email Textbox 
+<br>
+                                [2024-04-25 21:30:22,956 INFO com.maybestore.Login_demo] - Step 5: Sendkey data Pass 
+<br>
+                                [2024-04-25 21:30:23,196 INFO com.maybestore.Login_demo] - Step 6: Click Button Login
+<br>
+                                [2024-04-25 21:30:23,505 INFO com.maybestore.Login_demo] - ---------------------- PASSED -----------------------
+<br>
+                                [2024-04-25 21:30:23,510 INFO com.maybestore.Login_demo] - Step 7 :Please enter a part following '@'. 'maiduong060801@' is incomplete.
+<br>
+                                [2024-04-25 21:30:23,510 INFO com.maybestore.Login_demo] - ---------------------- PASSED -----------------------
+<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  TC_09_MissingCharactersBeforeAtSignInEmail
+      </td>
+  <td class="duration">
+    4,476s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [2024-04-25 21:30:38,687 INFO com.maybestore.Login_demo] - TC_09_MissingCharactersBeforeAtSignInEmailStep 1: Hover login span 
+<br>
+                                [2024-04-25 21:30:39,479 INFO com.maybestore.Login_demo] - TC_09_MissingCharactersBeforeAtSignInEmailStep 2: Click button login 
+<br>
+                                [2024-04-25 21:30:42,409 INFO com.maybestore.Login_demo] - TC_09_MissingCharactersBeforeAtSignInEmailStep 3: Open Login Page 
+<br>
+                                [2024-04-25 21:30:42,409 INFO com.maybestore.Login_demo] - TC_09_MissingCharactersBeforeAtSignInEmailStep 4: Sendkey data Email Textbox 
+<br>
+                                [2024-04-25 21:30:42,739 INFO com.maybestore.Login_demo] - TC_09_MissingCharactersBeforeAtSignInEmailStep 5: Sendkey data Pass 
+<br>
+                                [2024-04-25 21:30:42,857 INFO com.maybestore.Login_demo] - TC_09_MissingCharactersBeforeAtSignInEmailStep 6: Click Button Login
+<br>
+                                [2024-04-25 21:30:43,158 INFO com.maybestore.Login_demo] - ---------------------- PASSED -----------------------
+<br>
+                                [2024-04-25 21:30:43,162 INFO com.maybestore.Login_demo] - Step 7 :Please enter a part followed by '@'. '@gmail.com' is incomplete.
+<br>
+                                [2024-04-25 21:30:43,162 INFO com.maybestore.Login_demo] - ---------------------- PASSED -----------------------
+<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  TC_10_DisabledEmail_LoginWithPassword
+      </td>
+  <td class="duration">
+    10,597s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [2024-04-25 21:30:47,433 INFO com.maybestore.Login_demo] - TC_09_MissingCharactersBeforeAtSignInEmailStep 1: Hover login span 
+<br>
+                                [2024-04-25 21:30:52,592 INFO com.maybestore.Login_demo] - TC_09_MissingCharactersBeforeAtSignInEmailStep 2: Click button login 
+<br>
+                                [2024-04-25 21:30:53,589 INFO com.maybestore.Login_demo] - TC_09_MissingCharactersBeforeAtSignInEmailStep 3: Open Login Page 
+<br>
+                                [2024-04-25 21:30:53,589 INFO com.maybestore.Login_demo] - TC_09_MissingCharactersBeforeAtSignInEmailStep 4: Sendkey data Email Textbox 
+<br>
+                                [2024-04-25 21:30:53,820 INFO com.maybestore.Login_demo] - TC_09_MissingCharactersBeforeAtSignInEmailStep 5: Sendkey data Pass 
+<br>
+                                [2024-04-25 21:30:54,063 INFO com.maybestore.Login_demo] - TC_09_MissingCharactersBeforeAtSignInEmailStep 6: Click Button Login
+<br>
+                                [2024-04-25 21:30:55,983 INFO com.maybestore.Login_demo] - ---------------------- PASSED -----------------------
+<br>
+                                [2024-04-25 21:30:55,992 INFO com.maybestore.Login_demo] - Step 7 :Please fill out this field.
+<br>
+                                [2024-04-25 21:30:55,992 INFO com.maybestore.Login_demo] - Step 7 : verify
+<br>
+                                [2024-04-25 21:30:58,029 INFO com.maybestore.Login_demo] - ---------------------- PASSED -----------------------
+<br>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  TC_11_DeletedEmail_LoginWithPassword
+      </td>
+  <td class="duration">
+    5,681s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [2024-04-25 21:31:01,086 INFO com.maybestore.Login_demo] - TC_09_MissingCharactersBeforeAtSignInEmailStep 1: Hover login span 
+<br>
+                                [2024-04-25 21:31:01,439 INFO com.maybestore.Login_demo] - TC_09_MissingCharactersBeforeAtSignInEmailStep 2: Click button login 
+<br>
+                                [2024-04-25 21:31:02,467 INFO com.maybestore.Login_demo] - TC_09_MissingCharactersBeforeAtSignInEmailStep 3: Open Login Page 
+<br>
+                                [2024-04-25 21:31:02,467 INFO com.maybestore.Login_demo] - TC_09_MissingCharactersBeforeAtSignInEmailStep 4: Sendkey data Email Textbox 
+<br>
+                                [2024-04-25 21:31:02,834 INFO com.maybestore.Login_demo] - TC_09_MissingCharactersBeforeAtSignInEmailStep 5: Sendkey data Pass 
+<br>
+                                [2024-04-25 21:31:02,947 INFO com.maybestore.Login_demo] - TC_09_MissingCharactersBeforeAtSignInEmailStep 6: Click Button Login
+<br>
+                                [2024-04-25 21:31:06,766 INFO com.maybestore.Login_demo] - ---------------------- PASSED -----------------------
+<br>
+                  </div>
+    
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Run on CHROME"
+           tests="12"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="203,320">
+  <properties />
+  
+  
+            <testcase name="TC_07_CheckountValidatCity_District_Ward" time="21,081" classname="com.maybestore.Testcase_checkount" />
+                <testcase name="TC_04_CheckountWithWhiteSpaceEmail" time="18,294" classname="com.maybestore.Testcase_checkount" />
+                <testcase name="TC_03_CheckountFieldWithFullName" time="18,532" classname="com.maybestore.Testcase_checkount" />
+                <testcase name="TC_02_Checkount_required_fields" time="13,957" classname="com.maybestore.Testcase_checkount" />
+                <testcase name="TC_05_CheckountLenghtPhone" time="15,238" classname="com.maybestore.Testcase_checkount" />
+                <testcase name="TC_03_CheckountWithWhiteSpaceFullName" time="18,494" classname="com.maybestore.Testcase_checkount" />
+                <testcase name="TC_06_CheckountWhiteSpaceAddress" time="18,992" classname="com.maybestore.Testcase_checkount" />
+                <testcase name="TC_05_CheckountWhiteSpacePhone" time="18,277" classname="com.maybestore.Testcase_checkount" />
+                <testcase name="TC_05_CheckountValidatePhone" time="15,285" classname="com.maybestore.Testcase_checkount" />
+                <testcase name="TC_01_Checkount_Empty_All_Fields" time="6,886" classname="com.maybestore.Testcase_checkount" />
+                <testcase name="TC_04_CheckountWithCorrectEmail" time="18,884" classname="com.maybestore.Testcase_checkount" />
+                <testcase name="TC_04_CheckountWithInvaliEmail" time="19,400" classname="com.maybestore.Testcase_checkount" />
+      
+</testsuite>

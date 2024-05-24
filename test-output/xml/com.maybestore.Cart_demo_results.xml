@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Run on CHROME"
+           tests="6"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="48,353">
+  <properties />
+  
+  
+            <testcase name="TC_02_AddDifferentProductsToCart" time="9,249" classname="com.maybestore.Cart_demo" />
+                <testcase name="TC_06_DecreaseQuantity" time="11,035" classname="com.maybestore.Cart_demo" />
+                <testcase name="TC_05_IncreaseQuantity" time="7,530" classname="com.maybestore.Cart_demo" />
+                <testcase name="TC_04_DeleteAllProductInCart" time="5,357" classname="com.maybestore.Cart_demo" />
+                <testcase name="TC_01_AddDuplicateProductsToCartAndCheckCart" time="13,947" classname="com.maybestore.Cart_demo" />
+                <testcase name="TC_03_EmptyCart" time="1,235" classname="com.maybestore.Cart_demo" />
+      
+</testsuite>

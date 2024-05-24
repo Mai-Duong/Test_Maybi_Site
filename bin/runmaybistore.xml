@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="tests" name="Cart - Maybi" thread-count="1">
+	<listeners>
+		<listener class-name="commons.MethodListener" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="reportConfig.ReportNGListener" />
+	</listeners>
+
+	<parameter name="url"
+		value="https://maybi.com/" />
+
+
+
+	<test name="Run on CHROME">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.maybestore.Testcase_Register" />
+			<class name="com.maybestore.Testcase_Login" />
+			<class name="com.maybestore.Testcase_Search" />
+			<class name="com.maybestore.Testcase_Cart" />
+			<class name="com.maybestore.Testcase_checkount" />
+		</classes>
+	</test>  
+
+
+</suite> 

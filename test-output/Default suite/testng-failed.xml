@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.maybestore.Testcase_Register">
+        <methods>
+          <include name="TC_03_RegisterWithEmptyFirstName"/>
+          <include name="AfterMethod"/>
+          <include name="TC_02_RegisterWithEmptyLastName"/>
+          <include name="TC_03_RegisterWithWhitespaceFirstName"/>
+          <include name="TC_05_RegisterWithEmailMissingUsername"/>
+          <include name="TC_07_RegisterWithLenghtSixPassword"/>
+          <include name="TC_04_RegisterWithInvalidPhoneNumber"/>
+          <include name="TC_07_RegisterWithLenghtFivePassword"/>
+          <include name="TC_04_RegisterWithPhoneNumberContainingSpaces"/>
+          <include name="TC_02_RegisterWithWhitespaceLasName"/>
+          <include name="beforeMethod"/>
+          <include name="TC_01_RegisterEmpty_All_Fields"/>
+          <include name="TC_05_RegisterWithEmptyEmail"/>
+          <include name="TC_07_RegisterWithLenghtFourPassword"/>
+          <include name="TC_04_RegisterWithEmptyPhone"/>
+          <include name="TC_05_RegisterWithEmailMissingDomain"/>
+          <include name="TC_04_IsValidPhoneNumberLength"/>
+          <include name="TC_07_RegisterWithWhitespacePassword"/>
+          <include name="TC_05_RegisterWithEmailMissingAtSymbol"/>
+          <include name="TC_06_RegisterWithExistingEmail"/>
+          <include name="TC_07_RegisterWithEmptyPassword"/>
+        </methods>
+      </class> <!-- com.maybestore.Testcase_Register -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
